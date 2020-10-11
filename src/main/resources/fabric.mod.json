@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "deathcert",
+  "version": "${version}",
+
+  "name": "Death Certificate",
+  "description": "Give players a death certificate so they don't lose their stuff as easily.",
+  "authors": [
+    "Alexandria P."
+  ],
+  "contact": {
+    "homepage": "https://blog.achu.xyz/",
+    "sources": "https://github.com/alxpettit/DeathCertificate"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/deathcert/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.achu.deathcert.DeathCertificate"
+    ]
+  },
+  "mixins": [
+    "deathcert.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
